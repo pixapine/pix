@@ -1,0 +1,415 @@
+.features20-layout349 {
+  height: 448px;
+  display: flex;
+  overflow: hidden;
+  margin-top: var(--dl-layout-space-doubleunit);
+  align-items: center;
+  margin-bottom: var(--dl-layout-space-doubleunit);
+  flex-direction: column;
+}
+ 
+.features20-container1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+ 
+.features20-max-width {
+  gap: 80px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: var(--dl-layout-space-unit);
+  align-self: flex-start;
+  margin-top: var(--dl-layout-space-unit);
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+ 
+.features20-container2 {
+  flex: 0 0 auto;
+  width: 60%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+ 
+.features20-content {
+  gap: 24px;
+  width: 80%;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  padding-left: var(--dl-layout-space-doubleunit);
+  flex-direction: column;
+}
+ 
+.features20-text2 {
+  width: auto;
+  align-self: flex-start;
+}
+ 
+.features20-actions {
+  gap: var(--dl-layout-space-unit);
+  display: flex;
+  align-self: flex-start;
+  padding-left: 0.px;
+}
+ 
+.features20-button1 {
+  padding-top: var(--dl-layout-space-halfunit);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: var(--dl-layout-space-halfunit);
+  text-decoration: none;
+}
+ 
+.features20-button2 {
+  padding-top: var(--dl-layout-space-halfunit);
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: var(--dl-layout-space-halfunit);
+  text-decoration: none;
+}
+ 
+.features20-container3 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  padding-top: var(--dl-layout-space-halfunit);
+  padding-left: var(--dl-layout-space-halfunit);
+  padding-right: var(--dl-layout-space-halfunit);
+  flex-direction: column;
+  padding-bottom: var(--dl-layout-space-halfunit);
+  justify-content: center;
+}
+ 
+.features20-image {
+  width: 90%;
+  object-fit: cover;
+  border-radius: var(--dl-layout-radius-inputradius);
+}
+ 
+.features20-fragment1 {
+  display: contents;
+}
+ 
+.features20-text3 {
+  display: inline-block;
+}
+ 
+.features20-fragment2 {
+  display: contents;
+}
+ 
+.features20-text4 {
+  display: inline-block;
+}
+ 
+.features20-fragment3 {
+  display: contents;
+}
+ 
+.features20-text5 {
+  display: inline-block;
+  font-size: 64px;
+  font-style: normal;
+  font-family: "Space Grotesk";
+  font-weight: 700;
+}
+ 
+.features20-fragment4 {
+  display: contents;
+}
+ 
+.features20-text6 {
+  display: inline-block;
+}
+ 
+.features20root-class-name {
+  height: auto;
+  padding: var(--dl-layout-space-unit);
+  max-width: 1400px;
+}
+ 
+@media(max-width: 1600px) {
+  .features20-text3 {
+    font-size: 17px;
+    font-style: normal;
+    font-family: DM Sans;
+    font-weight: 500;
+  }
+  .features20-text4 {
+    font-size: 18px;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 600;
+  }
+  .features20-text5 {
+    font-size: 56px;
+    font-style: normal;
+    font-family: Space Grotesk;
+    font-weight: 700;
+  }
+  .features20-text6 {
+    font-size: 18px;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 600;
+  }
+  .features20root-class-name {
+    max-width: 1250px;
+  }
+}
+ 
+@media(max-width: 1200px) {
+  .features20-layout349 {
+    height: auto;
+  }
+  .features20-container2 {
+    width: 60%;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .features20-content {
+    width: auto;
+    align-self: center;
+  }
+  .features20-text2 {
+    width: auto;
+    align-self: flex-start;
+  }
+  .features20-container3 {
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+  }
+  .features20-image {
+    width: 50%;
+    display: flex;
+  }
+  .features20-text3 {
+    font-size: 17px;
+    font-family: DM Sans;
+  }
+  .features20-text4 {
+    font-size: 17px;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 600;
+  }
+  .features20-text5 {
+    font-size: 45px;
+    font-style: normal;
+    font-family: Space Grotesk;
+    font-weight: 700;
+  }
+  .features20-text6 {
+    font-size: 17px;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 600;
+  }
+}
+ 
+@media(max-width: 991px) {
+  .features20-layout349 {
+    height: auto;
+  }
+  .features20-max-width {
+    gap: 32px;
+    flex-direction: column-reverse;
+  }
+  .features20-container2 {
+    width: 100%;
+  }
+  .features20-content {
+    width: 100%;
+    padding-left: var(--dl-layout-space-unit);
+  }
+  .features20-container3 {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+  .features20-image {
+    width: 50%;
+  }
+  .features20-text3 {
+    font-size: 17px;
+    font-style: normal;
+    font-family: DM Sans;
+    font-weight: 500;
+  }
+  .features20-text4 {
+    font-size: 15px;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 600;
+  }
+  .features20-text5 {
+    font-size: 40px;
+    font-style: normal;
+    font-family: Space Grotesk;
+    font-weight: 700;
+  }
+  .features20-text6 {
+    font-size: 15px;
+    font-style: inherit;
+    font-family: Raleway;
+    font-weight: 600;
+  }
+  .features20root-class-name {
+    padding: var(--dl-layout-space-halfunit);
+  }
+}
+ 
+@media(max-width: 767px) {
+  .features20-layout349 {
+    height: auto;
+  }
+  .features20-text1 {
+    padding-bottom: var(--dl-layout-space-halfunit);
+  }
+  .features20-max-width {
+    width: auto;
+    height: auto;
+  }
+  .features20-content {
+    padding-left: var(--dl-layout-space-unit);
+  }
+  .features20-text2 {
+    padding-bottom: var(--dl-layout-space-unit);
+  }
+  .features20-actions {
+    padding-top: var(--dl-layout-space-unit);
+    padding-left: 0px;
+  }
+  .features20-container3 {
+    width: auto;
+    display: flex;
+    align-self: center;
+  }
+  .features20-image {
+    width: 40%;
+    display: block;
+  }
+  .features20-text3 {
+    font-size: 17px;
+    font-style: normal;
+    font-family: DM Sans;
+    font-weight: 500;
+  }
+  .features20-text4 {
+    font-size: 15px;
+    font-style: inherit;
+    font-family: Raleway;
+    font-weight: 500;
+  }
+  .features20-text5 {
+    font-size: 34px;
+    font-style: normal;
+    font-family: Space Grotesk;
+    font-weight: 700;
+  }
+  .features20-text6 {
+    font-size: 15px;
+    font-style: normal;
+    font-family: Raleway;
+    font-weight: 500;
+  }
+  .features20root-class-name {
+    padding: var(--dl-layout-space-unit);
+    position: static;
+    align-self: center;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .features20-layout349 {
+    width: 100%;
+    height: auto;
+    padding-top: var(--dl-layout-space-doubleunit);
+    padding-bottom: var(--dl-layout-space-unit);
+  }
+  .features20-text1 {
+    align-self: flex-start;
+    padding-bottom: 0px;
+  }
+  .features20-max-width {
+    width: 100%;
+    height: auto;
+    padding: var(--dl-layout-space-unit);
+    align-self: center;
+    align-items: stretch;
+    justify-content: center;
+  }
+  .features20-content {
+    width: auto;
+    height: auto;
+    align-self: stretch;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .features20-text2 {
+    align-self: center;
+    padding-bottom: 0px;
+  }
+  .features20-actions {
+    width: auto;
+    align-self: center;
+    padding-top: var(--dl-layout-space-halfunit);
+    padding-left: 0px;
+    flex-direction: column;
+    padding-bottom: var(--dl-layout-space-halfunit);
+  }
+  .features20-button1 {
+    width: 100%;
+    align-self: center;
+  }
+  .features20-button2 {
+    width: 100%;
+    align-self: center;
+  }
+  .features20-container3 {
+    width: auto;
+    display: flex;
+    align-self: center;
+    align-items: center;
+  }
+  .features20-image {
+    width: 30%;
+  }
+  .features20-text3 {
+    font-size: 17px;
+    font-style: normal;
+    font-family: DM Sans;
+    font-weight: 500;
+  }
+  .features20-text5 {
+    font-size: 30px;
+    font-style: normal;
+    font-family: Space Grotesk;
+    font-weight: 700;
+  }
+  .features20root-class-name {
+    width: 90%;
+    padding: var(--dl-layout-space-halfunit);
+    overflow: visible;
+    position: static;
+    max-width: 1200px;
+    align-self: center;
+  }
+}

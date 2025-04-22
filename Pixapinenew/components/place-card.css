@@ -1,0 +1,147 @@
+.place-card-container1 {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.place-card-image {
+  width: 100%;
+  object-fit: cover;
+}
+ 
+.place-card-container2 {
+  width: 100%;
+  display: flex;
+  padding: var(--dl-layout-space-unit);
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.place-card-text1 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  padding-bottom: var(--dl-layout-space-halfunit);
+}
+ 
+.place-card-text2 {
+  align-self: center;
+}
+ 
+.place-card-fragment1 {
+  display: contents;
+}
+ 
+.place-card-text3 {
+  display: inline-block;
+  font-size: 30px;
+}
+ 
+.place-card-fragment2 {
+  display: contents;
+}
+ 
+.place-card-text4 {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "DM Sans";
+}
+ 
+.place-cardroot-class-name {
+  width: 30%;
+}
+ 
+.place-cardroot-class-name1 {
+  width: 30%;
+}
+ 
+.place-cardroot-class-name2 {
+  width: 30%;
+}
+ 
+@media(max-width: 1600px) {
+  .place-card-container1 {
+    width: 300px;
+  }
+  .place-card-image {
+    width: 100%;
+  }
+  .place-card-text3 {
+    font-size: 24px;
+  }
+  .place-card-text4 {
+    font-size: 18px;
+    font-family: DM Sans;
+  }
+}
+ 
+@media(max-width: 1200px) {
+  .place-card-text4 {
+    font-size: 17px;
+    font-family: DM Sans;
+  }
+}
+ 
+@media(max-width: 991px) {
+  .place-card-text3 {
+    font-size: 24px;
+  }
+  .place-card-text4 {
+    font-size: 16px;
+    font-family: DM Sans;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .place-card-container1 {
+    width: 200px;
+  }
+  .place-card-text4 {
+    font-size: 15px;
+    font-family: DM Sans;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .place-card-container1 {
+    width: 100%;
+    height: auto;
+  }
+  .place-card-image {
+    width: 70%;
+  }
+  .place-card-container2 {
+    height: auto;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+  .place-card-text1 {
+    padding-top: var(--dl-layout-space-halfunit);
+  }
+  .place-card-text2 {
+    padding: var(--dl-layout-space-halfunit);
+    align-self: stretch;
+  }
+  .place-card-text3 {
+    font-size: 19px;
+  }
+  .place-card-text4 {
+    font-size: 14px;
+  }
+  .place-cardroot-class-name {
+    width: auto;
+    padding: var(--dl-layout-space-halfunit);
+  }
+  .place-cardroot-class-name1 {
+    width: auto;
+    padding: var(--dl-layout-space-halfunit);
+    align-self: flex-start;
+  }
+  .place-cardroot-class-name2 {
+    width: auto;
+    padding: var(--dl-layout-space-halfunit);
+  }
+}
