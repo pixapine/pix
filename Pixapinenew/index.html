@@ -146,7 +146,41 @@
 <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body
-    ><link rel="stylesheet" href="./style.css" /><div
+    ><link rel="stylesheet" href="./style.css" />
+<div>
+  <!-- Your existing HTML content -->
+</div>
+
+<!-- Add this script at the bottom of your HTML -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const burgerMenu = document.querySelector('[data-thq="thq-burger-menu"]');
+      const mobileMenu = document.querySelector('[data-thq="thq-mobile-menu"]');
+      const closeMenu = document.querySelector('[data-thq="thq-close-menu"]');
+      
+      burgerMenu.addEventListener('click', function() {
+          this.classList.toggle('active');
+          mobileMenu.classList.toggle('active');
+          document.body.style.overflow = 'hidden';
+      });
+      
+      closeMenu.addEventListener('click', function() {
+          burgerMenu.classList.remove('active');
+          mobileMenu.classList.remove('active');
+          document.body.style.overflow = '';
+      });
+      
+      // Close menu when clicking on links
+      const mobileLinks = document.querySelectorAll('.landing-page-links2 a');
+      mobileLinks.forEach(link => {
+          link.addEventListener('click', function() {
+              burgerMenu.classList.remove('active');
+              mobileMenu.classList.remove('active');
+              document.body.style.overflow = '';
+          });
+      });
+  });
+</script><link rel="stylesheet" href="./style.css" /><div
       ><link href="./index.css" rel="stylesheet" /><div
         class="landing-page-container1"
         ><div id="Home" class="landing-page-top-container"
