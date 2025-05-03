@@ -33,7 +33,149 @@
   --dl-layout-radius-inputradius: 24px;
   --dl-layout-radius-buttonradius: 24px;
 }
- 
+ /* Mobile Menu Styling */
+.landing-page-mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-page-mobile-menu.active {
+    left: 0;
+}
+
+.landing-page-nav {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.landing-page-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.landing-page-logo {
+    height: 60px;
+    filter: drop-shadow(0 0 10px rgba(255,255,255,0.3));
+}
+
+.landing-page-close-menu {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.landing-page-close-menu:hover {
+    transform: rotate(90deg);
+}
+
+.landing-page-links2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.landing-page-link15, 
+.landing-page-link16,
+.landing-page-link17,
+.landing-page-link18,
+.landing-page-link19 {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.landing-page-link15:hover, 
+.landing-page-link16:hover,
+.landing-page-link17:hover,
+.landing-page-link18:hover,
+.landing-page-link19:hover {
+    color: #ff4d4d;
+    transform: translateX(10px);
+}
+
+.landing-page-link15:before, 
+.landing-page-link16:before,
+.landing-page-link17:before,
+.landing-page-link18:before,
+.landing-page-link19:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff4d4d;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.landing-page-link15:hover:before, 
+.landing-page-link16:hover:before,
+.landing-page-link17:hover:before,
+.landing-page-link18:hover:before,
+.landing-page-link19:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+/* Burger Menu Animation */
+.landing-page-burger-menu {
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.landing-page-icon10 path {
+    transition: all 0.3s ease;
+}
+
+.landing-page-burger-menu.active .landing-page-icon10 path:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.landing-page-burger-menu.active .landing-page-icon10 path:nth-child(2) {
+    opacity: 0;
+}
+
+.landing-page-burger-menu.active .landing-page-icon10 path:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
+
+/* Add some floating animation to menu items */
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.landing-page-link15 { animation: floatIn 0.4s ease 0.1s forwards; opacity: 0; }
+.landing-page-link16 { animation: floatIn 0.4s ease 0.2s forwards; opacity: 0; }
+.landing-page-link17 { animation: floatIn 0.4s ease 0.3s forwards; opacity: 0; }
+.landing-page-link18 { animation: floatIn 0.4s ease 0.4s forwards; opacity: 0; }
+.landing-page-link19 { animation: floatIn 0.4s ease 0.5s forwards; opacity: 0; }
 .teleport-show {
   display: flex !important;
   transform: none !important;
