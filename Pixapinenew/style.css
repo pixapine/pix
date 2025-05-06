@@ -632,23 +632,27 @@
     padding-bottom: 0px;
   }
 }
-/* Zoom-in Animation for PlaceCard Images Only */
+/* Guaranteed Zoom Effect for PlaceCard Images */
 .place-card-image,
 .place-card-image1,
 .place-card-image2 {
-  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: block; /* Ensures transform works */
+  width: 100%; /* Prevents sizing issues */
+  height: auto; /* Maintains aspect ratio */
+  transition: transform 0.5s ease;
+  transform: scale(1); /* Initial state */
   transform-origin: center center;
 }
 
 .place-card-image:hover,
 .place-card-image1:hover,
 .place-card-image2:hover {
-  transform: scale(1.1); /* 10% zoom */
+  transform: scale(1.15); /* 15% zoom */
+  will-change: transform; /* Optimizes animation */
 }
 
-/* Prevent layout shift during zoom */
-.place-card-container1,
-.place-card-container3,
-.place-card-container5 {
-  overflow: hidden; /* Contains the zoomed image */
+/* Container fix to prevent layout shift */
+[class^="place-card-container"] {
+  overflow: hidden;
+  position: relative;
 }
