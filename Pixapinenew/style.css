@@ -632,3 +632,18 @@
     padding-bottom: 0px;
   }
 }
+/* Enhanced image hover animation */
+.place-card-image,
+.place-card-image1,
+.place-card-image2 {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform-origin: center center;
+}
+
+.place-card-image:hover,
+.place-card-image1:hover,
+.place-card-image2:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  filter: brightness(1.05);
+}
