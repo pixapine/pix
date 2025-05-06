@@ -643,7 +643,7 @@
 .place-card-image:hover,
 .place-card-image1:hover,
 .place-card-image2:hover {
-  transform: scale(1.03);
+  transform: scale(2.25);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  filter: brightness(2.5);
+  filter: brightness(1.05);
 }
