@@ -632,27 +632,27 @@
     padding-bottom: 0px;
   }
 }
-/* Guaranteed Zoom Effect for PlaceCard Images */
-.place-card-image,
-.place-card-image1,
-.place-card-image2 {
-  display: block; /* Ensures transform works */
-  width: 100%; /* Prevents sizing issues */
-  height: auto; /* Maintains aspect ratio */
-  transition: transform 0.5s ease;
-  transform: scale(1); /* Initial state */
-  transform-origin: center center;
+/* Force zoom effect by overriding parent styles */
+.placecard .place-card-image,
+.placecard .place-card-image1,
+.placecard .place-card-image2 {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  transition: transform 0.5s cubic-bezier(0.2, 0.9, 0.4, 1.1) !important;
+  transform: scale(1) !important;
+  transform-origin: center !important;
 }
 
-.place-card-image:hover,
-.place-card-image1:hover,
-.place-card-image2:hover {
-  transform: scale(1.15); /* 15% zoom */
-  will-change: transform; /* Optimizes animation */
+.placecard .place-card-image:hover,
+.placecard .place-card-image1:hover,
+.placecard .place-card-image2:hover {
+  transform: scale(1.15) !important;
+  z-index: 10 !important; /* Brings zoomed image forward */
 }
 
-/* Container fix to prevent layout shift */
-[class^="place-card-container"] {
-  overflow: hidden;
-  position: relative;
+/* Container fix (if needed) */
+.placecard [class*="place-card-container"] {
+  overflow: hidden !important;
+  position: relative !important;
 }
